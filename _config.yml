@@ -2,6 +2,7 @@ title: Belkirk College of Engineering
 short_title: Belkirk
 description: Belkirk Demo Site for Forestry.io
 baseurl:
+permalink: "/:path/"
 defaults:
   - scope:
       path: ""
@@ -15,10 +16,12 @@ defaults:
 collections:
   people:
     output: true
+    permalink: "/about/:path/"
   posts:
     output: true
   projects:
     output: true
+    permalink: "/projects/:path/"
 # tag_page_layout: tag_page
 # tag_page_dir: tag
 jekyll-archives:
